@@ -1,0 +1,8 @@
+Introduction to GenAI Engineering
+LLM Foundations
+LLM Training, Fine-Tuning and Alignment
+Benchmarking LLMs
+Agentic AI Systems
+Prompt Engineering: From Naïve to Automated
+LLMs RAG & Graph Knowledge
+The Evolution of Scaling Laws in Large Language Models
