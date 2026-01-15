@@ -13,6 +13,7 @@ The website must include the following sections:
 - **About Section**: Include text describing the student and their studies.
 - **Courses Section**: List the courses attended by the student.
 - **Projects Section**: Showcase projects implemented by the student, with mock links to GitHub repositories.
+- **Impressum Section**: German law requires this section to disclose specific ownership and contact information.
 - **Custom Section**: Add your own additional section(s) as desired.
 
 Additional requirements:
