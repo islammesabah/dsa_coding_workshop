@@ -39,6 +39,20 @@ Instruct your AI (ChatGPT or Gemini) to act as an **Expert Python Developer** to
 * **Architecture:** Use HTTP POST requests with a JSON body containing `model`, `prompt`, and `stream` fields.
 * **Dependencies:** Standard Python libraries and the `requests` module.
 
+### Fallback: Using Groq Models
+
+If the RPTU servers are unavailable or not working, you can use Groq as an alternative:
+
+* **API Endpoint:** `https://api.groq.com/openai/v1/chat/completions`
+* **API Key:** Sign up at [console.groq.com](https://console.groq.com) to obtain a free API key.
+* **Architecture:** Use HTTP POST requests with a JSON body containing:
+  * `model`: Recommended models include `llama-3.1-70b-versatile` or `mixtral-8x7b-32768`
+  * `messages`: Array with role and content (e.g., `[{"role": "user", "content": "your prompt here"}]`)
+  * `temperature`: Optional, set to 0.7 for balanced responses
+* **Authentication:** Include the API key in the request headers as `Authorization: Bearer YOUR_API_KEY`
+* **Dependencies:** Same as above - standard Python libraries and the `requests` module.
+* **Implementation Note:** The script should first attempt to connect to RPTU, and if that fails (connection error, timeout, or non-200 status), automatically fall back to Groq.
+
 
 
 
